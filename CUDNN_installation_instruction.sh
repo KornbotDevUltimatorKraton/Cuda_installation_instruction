@@ -2,8 +2,8 @@ echo 'Install the NVIDIA driver for the GPU and tensorflow for deep learning'
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh
 sudo ubuntu-drivers devices
-sudo ubuntu-drivers autoinstall
-sudo apt install nvidia-driver-535 -y 
+sudo ubuntu-drivers autoinstall # If you need to autoinstall the version of the driver 
+#sudo apt install nvidia-driver-535 -y 
 sudo apt install nvidia-cuda-toolkit -y 
 nvcc -V
 whereis cuda
